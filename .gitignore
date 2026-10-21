@@ -1,0 +1,25 @@
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Secrets — never commit.
+# config.json holds the real ASR api_key; config.example.json is the safe template.
+.env
+.env.*
+*.key
+*.pem
+*.p12
+key.txt
+config.json
+
+# Run artifacts
+/transcripts/
+manifest.jsonl
+*.log
+
+# Language/tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+node_modules/

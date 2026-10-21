@@ -1,0 +1,56 @@
+{
+  "_comment": "复制成 config.json 后用 --config config.json 传入。带 api_key 的配置不要提交到版本库。",
+
+  "output_dir": "./transcripts",
+  "opencli_cmd": "opencli",
+  "opencli_keep_tab": false,
+  "opencli_site_session": "ephemeral",
+  "opencli_window": "background",
+  "prenav_retry_foreground": false,
+  "cleanup_browser": true,
+  "cleanup_sessions": ["__doctor__"],
+  "background_only": true,
+  "lock_timeout": 900,
+
+  "overwrite": false,
+  "keep_media": false,
+  "manifest": true,
+  "skip_asr": false,
+
+  "asr": {
+    "backend": "auto",
+    "api_base": "http://127.0.0.1:8000/v1",
+    "api_key": "",
+    "_model_comment": "走 API 时必填，取决于你的接口部署了哪个模型；留空会直接报可操作的错",
+    "model": "",
+    "language": "zh",
+    "timeout": 1800,
+    "max_retries": 3,
+    "retry_base_delay": 1.0,
+    "compress_mb": 80,
+    "local_model": "",
+    "local_fallback_model": ""
+  },
+
+  "bilibili": {
+    "quality": "audio",
+    "fallback_quality": "480p",
+    "page_size": 50,
+    "max_pages": null,
+    "subtitle_lang": "zh-CN",
+    "workers": 4
+  },
+
+  "xiaohongshu": {
+    "user_limit": 200,
+    "retries": 3
+  },
+
+  "jitter": {
+    "enabled": true,
+    "min": 60,
+    "max": 180,
+    "guarantee_interval": 10,
+    "guarantee_min": 110
+  }
+}

@@ -1,0 +1,13 @@
+# Normalize to LF on commit. The skill is written and tested with LF;
+# write_txt() emits LF explicitly so output files are identical across platforms.
+* text=auto eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.py text eol=lf
+*.ps1 text eol=lf
+
+# cleanup_opencli_groups.ps1 must keep its UTF-8 BOM (PowerShell 5.1 decodes
+# BOM-less UTF-8 as ANSI and fails to parse the Chinese comments).
+# Line-ending normalization does not strip the BOM; this file is kept as text
+# so diffs stay readable. The Python side also self-heals a missing BOM at
+# runtime via vt_common._ensure_utf8_bom(), so a stripped BOM cannot break it.
