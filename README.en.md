@@ -16,7 +16,7 @@ Supports single videos, Bilibili uploader profiles, Bilibili collections, Xiaoho
 
 ## Requirements
 
-- **[opencli](https://www.npmjs.com/package/opencli)** — performs the actual downloads and reuses your browser login via Browser Bridge
+- **[opencli](https://www.npmjs.com/package/@jackwener/opencli)** — performs the actual downloads and reuses your browser login via Browser Bridge
 - **Chrome / Chromium** with the opencli Browser Bridge extension, logged in to the target sites
 - **ffmpeg** (including `ffprobe`) on PATH
 - **ASR, one of**:

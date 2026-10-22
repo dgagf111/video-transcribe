@@ -16,7 +16,7 @@
 
 ## 前置依赖
 
-- **[opencli](https://www.npmjs.com/package/opencli)** —— 负责实际下载，通过 Browser Bridge 扩展复用浏览器的登录态
+- **[opencli](https://www.npmjs.com/package/@jackwener/opencli)** —— 负责实际下载，通过 Browser Bridge 扩展复用浏览器的登录态
 - **Chrome / Chromium** 已装 opencli Browser Bridge 扩展，且目标站点已登录
 - **ffmpeg**（含 `ffprobe`）在 PATH 中
 - **ASR 能力二选一**：
